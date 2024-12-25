@@ -1,7 +1,7 @@
 {
     "name": "vscode-comment-highlight",
-    "displayName": "comment syntax highlighting with markdown style",
-    "description": "Adds syntax highlighting to comments",
+    "displayName": "Comment Highlight",
+    "description": "Highlight document comments using Markdown style",
     "version": "0.0.1",
     "publisher": "wtklbm",
     "galleryBanner": {
