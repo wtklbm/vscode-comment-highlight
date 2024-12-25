@@ -1,0 +1,102 @@
+{
+    "$schema": "https://raw.githubusercontent.com/RedCMD/TmLanguage-Syntax-Highlighter/main/vscode.tmLanguage.schema.json",
+    "scopeName": "source.comment.todos.line",
+    "injectionSelector": "L:comment.line",
+    "patterns": [
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TODO:?|@todo)(?= |$)",
+            "end": "$",
+            "name": "constant.character.escape"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:INFO:?|@info)(?= |$)",
+            "end": "$",
+            "name": "meta.preprocessor.numeric"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:NOTE:?|@note)(?= |$)",
+            "end": "$",
+            "name": "keyword.note.documentation"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:FIXME:?|@fixme)(?= |$)",
+            "end": "$",
+            "name": "constant.character.character-class.regexp"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:FIX:?|@fix)(?= |$)",
+            "end": "$",
+            "name": "constant.character.character-class.regexp"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:UGLY:?|@ugly)(?= |$)",
+            "end": "$",
+            "name": "support.type"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:BUG:?|@bug)(?= |$)",
+            "end": "$",
+            "name": "token.error-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:DEBUG:?|@debug)(?= |$)",
+            "end": "$",
+            "name": "token.debug-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:HACK:?|@hack)(?= |$)",
+            "end": "$",
+            "name": "source.groovy.embedded"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:REVIEW:?|@review)(?= |$)",
+            "end": "$",
+            "name": "variable.other.constant"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:OPTIMIZE:?|@optimize)(?= |$)",
+            "end": "$",
+            "name": "support.function"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TSC:?|@tsc)(?= |$)",
+            "end": "$",
+            "name": "meta.type.new.expr"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:IDEA:?|@idea)(?= |$)",
+            "end": "$",
+            "name": "keyword"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:CHANGED:?|@changed)(?= |$)",
+            "end": "$",
+            "name": "support.variable"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:XXX:?|@xxx)(?= |$)",
+            "end": "$",
+            "name": "markup.inserted"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:NB:?|@nb)(?= |$)",
+            "end": "$",
+            "name": "keyword.control"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:QUESTION:?|@question)(?= |$)",
+            "end": "$",
+            "name": "token.warn-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:COMBAK:?|@combak)(?= |$)",
+            "end": "$",
+            "name": "token.info-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TEMP:?|@temp)(?= |$)",
+            "end": "$",
+            "name": "string"
+        }
+    ]
+}

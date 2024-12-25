@@ -1,0 +1,52 @@
+{
+    "$schema": "https://raw.githubusercontent.com/RedCMD/TmLanguage-Syntax-Highlighter/main/vscode.tmLanguage.schema.json",
+    "scopeName": "source.comment.message.line",
+    "injectionSelector": "L:comment.line",
+    "patterns": [
+        { "include": "text.html.markdown#inline" },
+        {
+            "comment": "匹配 ${xxx} 模板字符串，支持多种前缀",
+            "match": "[$#@!]\\{([^}]+)\\}",
+            "name": "keyword.operator.or.regexp",
+            "captures": { "1": { "name": "variable" } }
+        },
+        {
+            "comment": "匹配以 # 开头的标题或行拆分符",
+            "begin": "(?<=^|\\G)[ \t]*#[# ]",
+            "end": "$",
+            "name": "markup.heading"
+        },
+        {
+            "comment": "匹配 Markdown 列表",
+            "begin": "(?<=^|\\G)[ \t]*[-+*] ",
+            "end": "$",
+            "name": " constant.numeric"
+        },
+        { "comment": "匹配日志消息" },
+        {
+            "begin": "(?<=^|\\G)[ \t]*log:",
+            "end": "$",
+            "name": "entity.name.label"
+        },
+        {
+            "begin": "(?<=^|\\G)[ \t]*info:",
+            "end": "$",
+            "name": "meta.preprocessor.numeric"
+        },
+        {
+            "begin": "(?<=^|\\G)[ \t]*note:",
+            "end": "$",
+            "name": "comment.todos.note"
+        },
+        {
+            "begin": "(?<=^|\\G)[ \t]*warn(?:ing)?:",
+            "end": "$",
+            "name": "constant.character.escape"
+        },
+        {
+            "begin": "(?<=^|\\G)[ \t]*errors?:",
+            "end": "$",
+            "name": "invalid"
+        }
+    ]
+}

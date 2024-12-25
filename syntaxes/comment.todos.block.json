@@ -1,0 +1,102 @@
+{
+    "$schema": "https://raw.githubusercontent.com/RedCMD/TmLanguage-Syntax-Highlighter/main/vscode.tmLanguage.schema.json",
+    "scopeName": "source.comment.todos.block",
+    "injectionSelector": "L:comment.block",
+    "patterns": [
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TODO:?|@todo)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "constant.character.escape"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:INFO:?|@info)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "meta.preprocessor.numeric"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:NOTE:?|@note)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "keyword.note.documentation"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:FIXME:?|@fixme)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "constant.character.character-class.regexp"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:FIX:?|@fix)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "constant.character.character-class.regexp"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:UGLY:?|@ugly)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "support.type"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:BUG:?|@bug)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "token.error-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:DEBUG:?|@debug)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "token.debug-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:HACK:?|@hack)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "source.groovy.embedded"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:REVIEW:?|@review)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "variable.other.constant"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:OPTIMIZE:?|@optimize)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "support.function"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TSC:?|@tsc)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "meta.type.new.expr"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:IDEA:?|@idea)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "keyword"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:CHANGED:?|@changed)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "support.variable"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:XXX:?|@xxx)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "markup.inserted"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:NB:?|@nb)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "keyword.control"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:QUESTION:?|@question)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "token.warn-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:COMBAK:?|@combak)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "token.info-token"
+        },
+        {
+            "begin": "(?<=^|\\G)([ \t]*)(?:TEMP:?|@temp)(?= |$)",
+            "while": "(?<=^|\\G)\\1 ",
+            "name": "string"
+        }
+    ]
+}
