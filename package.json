@@ -1,0 +1,67 @@
+{
+    "name": "vscode-comment-highlight",
+    "displayName": "comment syntax highlighting with markdown style",
+    "description": "Adds syntax highlighting to comments",
+    "version": "0.0.1",
+    "publisher": "wtklbm",
+    "galleryBanner": {
+        "color": "#ffffff",
+        "theme": "light"
+    },
+    "repository": {
+        "url": "https://github.com/wtklbm/vscode-comment-highlight.git"
+    },
+    "engines": {
+        "vscode": "^1.39.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "keywords": [
+        "highlight",
+        "comment",
+        "markdown"
+    ],
+    "contributes": {
+        "grammars": [
+            {
+                "scopeName": "source.comment.todos.line",
+                "path": "./syntaxes/comment.todos.line.json",
+                "injectTo": [
+                    "source"
+                ]
+            },
+            {
+                "scopeName": "source.comment.todos.block",
+                "path": "./syntaxes/comment.todos.block.json",
+                "injectTo": [
+                    "source"
+                ]
+            },
+            {
+                "scopeName": "source.comment.message.line",
+                "path": "./syntaxes/comment.message.line.json",
+                "injectTo": [
+                    "source"
+                ]
+            },
+            {
+                "scopeName": "source.comment.message.block",
+                "path": "./syntaxes/comment.message.block.json",
+                "injectTo": [
+                    "source"
+                ]
+            }
+        ]
+    },
+    "devDependencies": {
+        "@types/node": "^10.5.1",
+        "vscode": "^1.1.36"
+    },
+    "scripts": {
+        "build": "vsce package"
+    },
+    "dependencies": {
+        "@vscode/vsce": "^2.15.0"
+    }
+}
