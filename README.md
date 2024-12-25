@@ -1,6 +1,6 @@
-# Comments syntax highlighting
+# Comment Syntax Highlighting
 
-Adds syntax highlighting to comments. Supports fenced code blocks.
+Provides syntax highlighting for comments, including support for fenced code blocks.
 
 like this:
 
