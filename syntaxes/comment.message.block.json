@@ -18,7 +18,7 @@
         },
         {
             "comment": "匹配 Markdown 列表",
-            "begin": "(?<=^|\\G)([ \t]*)[-+*] ",
+            "begin": "(?<=^|\\G)([ \t]*)(?:[-+*]|\\d+\\.)[ \t]",
             "while": "(?<=^|\\G)\\1 ",
             "name": " constant.numeric"
         },
