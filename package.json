@@ -2,7 +2,7 @@
     "name": "vscode-comment-highlight",
     "displayName": "Comment Highlight",
     "description": "Highlight document comments using Markdown style",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "publisher": "wtklbm",
     "galleryBanner": {
         "color": "#ffffff",
